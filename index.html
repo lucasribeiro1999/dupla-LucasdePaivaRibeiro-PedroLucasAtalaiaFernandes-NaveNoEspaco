@@ -13,11 +13,14 @@
     <canvas id="game" width="960" height="540" aria-label="Área do jogo"></canvas>
     <div class="hud">
       <div><b>Controles:</b> WASD/Setas para mover • Espaço para atirar • Enter para iniciar/reiniciar</div>
-      <div class="small">Requisitos: loop (rAF), input, paralaxe, colisão AABB, spritesheet (idle/run/shoot) e
-        projéteis.</div>
+      <div class="small">Requisitos: loop (rAF), input, paralaxe, colisão AABB, spritesheet (idle/run/shoot), projéteis,
+        cronômetro e recorde.</div>
       <button class="btn" id="startBtn">▶ Jogar</button>
     </div>
   </div>
+
+  <!-- Fallback de áudio: funciona até quando o HTML é aberto como file:// -->
+  <audio id="bgm" src="audio/music.mp3" preload="auto" loop style="display:none"></audio>
 
   <script src="main.js"></script>
 </body>
