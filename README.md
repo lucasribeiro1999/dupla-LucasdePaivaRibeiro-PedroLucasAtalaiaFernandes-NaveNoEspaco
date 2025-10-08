@@ -27,7 +27,7 @@ style.css
 main.js
 
 ## Créditos de assets
-Sprites do player gerados por código (sem arquivo externo). Sons/imagens externos **não utilizados ainda**.
+Sprites do player gerados por código (sem arquivo externo). Sons/imagens externos **utilizados**.
 
 ## Licença
 Uso acadêmico/educacional.
