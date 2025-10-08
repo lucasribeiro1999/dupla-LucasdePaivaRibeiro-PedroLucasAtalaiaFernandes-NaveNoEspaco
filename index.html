@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Nave no Espaço — Patrulha de Asteroides</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <canvas id="game" width="960" height="540" aria-label="Área do jogo"></canvas>
+    <div class="hud">
+      <div><b>Controles:</b> WASD/Setas para mover • Espaço para atirar • Enter para iniciar/reiniciar</div>
+      <div class="small">Requisitos: loop (rAF), input, paralaxe, colisão AABB, spritesheet (idle/run/shoot) e projéteis.</div>
+      <button class="btn" id="startBtn">▶ Jogar</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

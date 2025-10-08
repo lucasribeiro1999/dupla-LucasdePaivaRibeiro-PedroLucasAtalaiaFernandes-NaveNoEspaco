@@ -1,0 +1,32 @@
+:root { --bg: #0b0e17; --fg: #e6f1ff; --accent: #7cc7ff; }
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.4 system-ui, Segoe UI, Roboto, sans-serif; }
+
+.wrap {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  gap: .75rem;
+  padding: 1rem;
+}
+
+canvas {
+  width: min(100vw - 2rem, 900px);
+  aspect-ratio: 16/9;
+  image-rendering: pixelated;
+  border: 2px solid #1a2333;
+  border-radius: 10px;
+  background: #000;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45), inset 0 0 80px rgba(124,199,255,.06);
+}
+
+.hud { text-align: center; opacity: .9; }
+.hud b { color: var(--accent); }
+
+.btn {
+  appearance: none; border: 0; padding: .6rem .9rem; border-radius: 10px;
+  background: #142035; color: var(--fg); cursor: pointer; font-weight: 600;
+}
+.btn:hover { filter: brightness(1.15); }
+
+.small { opacity: .8; font-size: .9rem; }
