@@ -1,58 +1,33 @@
-# 🎮 Jogo 2D no Canvas com LLMs (ChatGPT, Gemini ou Claude)
+# Nave no Espaço — Patrulha de Asteroides
 
-**Atividade Prática — 7 e 8 de outubro de 2025**  
-📚 *Disciplina: Desenvolvimento de Jogos Digitais*  
-👨🏻‍🏫 **Professor:** [Christien Lana Rachid](https://github.com/christienrachid)  
-📍 *Centro Universitário Academia*  
+Jogo 2D em **HTML5 Canvas + JS puro**. Tema: **Nave no Espaço**.
 
----
+## Como executar
+1. Abra `index.html` no navegador (Chrome/Edge/Firefox).  
+2. Clique em **Jogar** ou pressione **ENTER**.
 
-## 🧭 Descrição
-Este é o **repositório modelo oficial** da atividade avaliativa **“Jogo 2D no Canvas com LLMs”**, valendo **10 pontos**.  
-Os alunos devem trabalhar **em duplas**, desenvolvendo um **jogo 2D em HTML5 Canvas, JavaScript e CSS**, utilizando **duas LLMs (ChatGPT, Gemini ou Claude)** para apoio técnico e criativo.
+## Controles
+- **WASD/Setas**: mover a nave  
+- **ESPAÇO**: atirar  
+- **ENTER**: iniciar/reiniciar
 
----
+## Requisitos atendidos (1–6)
+- **Loop + update/draw**: `requestAnimationFrame`, funções separadas.  
+- **Input**: WASD/Setas + Espaço.  
+- **Paralaxe**: 4 camadas (distância, velocidade X/Y) + **nébula**.  
+- **AABB**: colisões Player×Asteroide e Bala×Asteroide.  
+- **Spritesheet & Clipping**: sprite programático **4x3** (idle/run/shoot) com `drawImage(img, sx, sy, sw, sh, dx, dy, dw, dh)` e `frameTimer`.  
+- **Projéteis**: pool de balas, direção/velocidade, remoção off-screen, score no HUD.
+- **Otimização**: object pooling (balas/partículas), culling, `MAX_DT`.  
+- **Polimento**: trailing (motion blur falso), HUD com sombra, **flash + knockback** ao dano.
 
-## ⚙️ Entregas
-- **Código-fonte:** via **Pull Request (PR)** neste repositório.  
-- **Relatório técnico (PDF):** via **tarefa no Canvas**.
-
-📅 **Prazo final:** 08/10/2025, até 23h59.
-
----
-
-## 🗂️ Estrutura do Template
-
+## Estrutura
 index.html
 style.css
 main.js
 
-/assets/ → sprites, sons, fundos
-/docs/ → prints, relatório completo e README detalhado
-/prompts/ → prompts utilizados nas LLMs (.txt)
+## Créditos de assets
+Sprites do player gerados por código (sem arquivo externo). Sons/imagens externos **não utilizados ainda**.
 
----
-
-## 🧩 Instruções resumidas
-1. Clique em **Use this template → Create a new repository**  
-2. Nomeie seu repositório:  
-
-dupla-sobrenome1-sobrenome2-tema
-
-Exemplo: `dupla-oliveira-gomes-asteroides`
-
-3. Desenvolva o jogo seguindo os requisitos e orientações.  
-4. Abra um **Pull Request (PR)** para este repositório até a data limite.  
-5. Envie o **relatório técnico** no Canvas.
-
----
-
-## 🔗 Documentos
-🎓 [Acesse o Canvas para envio do relatório](https://uniacademia.instructure.com/)  
-
----
-
-> “Criar é aprender duas vezes.”  
-> — *Joseph Joubert*  
-
----
+## Licença
+Uso acadêmico/educacional.
